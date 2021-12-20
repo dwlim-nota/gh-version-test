@@ -19,5 +19,4 @@ jobs:
         WITH_V: true
         RELEASE_BRANCHES: release,develop
     - name: aaa
-      uses: docker/build-push-action@v1
       run: echo "${{ steps.tag_version.outputs.new_tag }}"
